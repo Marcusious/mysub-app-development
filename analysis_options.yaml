@@ -1,0 +1,12 @@
+include: package:lint/analysis_options.yaml
+
+linter:
+  rules:
+    # allow SCREAMING_CASE identifiers
+    constant_identifier_names: false
+    avoid_classes_with_only_static_members: false
+    sort_unnamed_constructors_first: false
+analyzer:
+  exclude: [mysub/**]
+  errors:
+    prefer_const_constructors: warning
